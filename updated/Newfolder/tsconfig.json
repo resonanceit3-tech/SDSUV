@@ -12,7 +12,12 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "moduleResolution": "bundler"
+    "moduleResolution": "bundler",
+
+    "jsx": "react-jsx",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]
