@@ -1,0 +1,206 @@
+.academics-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  padding: 20px;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.back-button,
+.home-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.back-button:hover,
+.home-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.home-button {
+  margin-left: auto;
+}
+
+.academics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  padding: 50px 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.academics-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.academics-header h1 {
+  font-size: 42px;
+  color: #2c3e50;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+}
+
+.academics-header p {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+.academics-info-section {
+  margin-bottom: 50px;
+  padding: 30px;
+  background: linear-gradient(135deg, #d4e4f7 0%, #a8d8ff 100%);
+  border-radius: 10px;
+}
+
+.academics-info-section h2 {
+  color: #2c3e50;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.academics-info-section p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.academics-programs h2,
+.academics-highlights h2 {
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.program-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-top: 4px solid #4facfe;
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(79, 172, 254, 0.3);
+}
+
+.program-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.program-card h3 {
+  color: #2c3e50;
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.program-card p {
+  color: #777;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.highlight-card {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(79, 172, 254, 0.3);
+}
+
+.highlight-card h3 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.highlight-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border-radius: 10px;
+  color: white;
+}
+
+.contact-section h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.contact-section p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .academics-container {
+    padding: 30px 20px;
+  }
+
+  .academics-header h1 {
+    font-size: 32px;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .academics-info-section {
+    padding: 20px;
+  }
+}

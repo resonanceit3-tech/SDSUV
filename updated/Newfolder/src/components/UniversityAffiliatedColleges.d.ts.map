@@ -1,0 +1,1 @@
+{"version":3,"file":"UniversityAffiliatedColleges.d.ts","sourceRoot":"","sources":["UniversityAffiliatedColleges.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAC1B,OAAO,4CAA4C,CAAC;AAEpD,UAAU,iCAAiC;IACzC,QAAQ,EAAE,IAAI,GAAG,IAAI,CAAC;IACtB,MAAM,EAAE,MAAM,IAAI,CAAC;CACpB;AAED,QAAA,MAAM,4BAA4B,EAAE,KAAK,CAAC,EAAE,CAAC,iCAAiC,CAwI7E,CAAC;AAEF,eAAe,4BAA4B,CAAC"}

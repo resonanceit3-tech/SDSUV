@@ -1,0 +1,432 @@
+.datesheet-syllabus {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 80px 40px;
+}
+
+.datesheet-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.datesheet-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+  color: #1e3a5f;
+  margin: 0 0 60px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.datesheet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.info-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+
+.info-card:hover {
+  box-shadow: 0 20px 50px rgba(46, 204, 113, 0.25);
+  transform: translateY(-15px);
+}
+
+.info-card:hover::before {
+  transform: scaleX(1);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+  color: white;
+  padding: 35px 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-icon-wrapper {
+  width: 65px;
+  height: 65px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.info-card:hover .card-icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card-icon {
+  width: 36px;
+  height: 36px;
+  color: white;
+  stroke-width: 1.5;
+}
+
+.card-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}
+
+.card-body {
+  flex: 1;
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.info-item {
+  display: flex;
+  gap: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.info-item:hover {
+  background-color: #f8f9fa;
+  transform: translateX(8px);
+}
+
+.item-icon-wrapper {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(46, 204, 113, 0.2);
+}
+
+.info-icon {
+  width: 18px;
+  height: 18px;
+  color: white;
+  stroke-width: 2;
+}
+
+.item-content {
+  flex: 1;
+}
+
+.item-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #2ecc71;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.item-description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.card-footer {
+  padding: 25px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f0f0 100%);
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #e8e8e8;
+}
+
+.card-button {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 20px rgba(46, 204, 113, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(46, 204, 113, 0.4);
+}
+
+.card-button:active {
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .datesheet-syllabus {
+    padding: 60px 30px;
+  }
+
+  .datesheet-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  .datesheet-grid {
+    gap: 25px;
+  }
+
+  .card-header {
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .card-icon-wrapper {
+    width: 55px;
+    height: 55px;
+  }
+
+  .card-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .card-header h3 {
+    font-size: 22px;
+  }
+
+  .card-body {
+    padding: 30px 20px;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .datesheet-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-header {
+    padding: 25px 15px;
+  }
+
+  .card-body {
+    padding: 25px 15px;
+  }
+
+  .card-footer {
+    padding: 20px;
+  }
+
+  .card-button {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .datesheet-syllabus {
+    padding: 40px 20px;
+  }
+
+  .datesheet-title {
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+
+  .datesheet-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card-header {
+    padding: 20px 15px;
+    gap: 12px;
+  }
+
+  .card-icon-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .card-header h3 {
+    font-size: 18px;
+  }
+
+  .card-body {
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .info-item {
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .item-description {
+    font-size: 14px;
+  }
+
+  .card-footer {
+    padding: 15px;
+  }
+
+  .card-button {
+    padding: 11px 28px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .datesheet-syllabus {
+    padding: 30px 15px;
+  }
+
+  .datesheet-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .datesheet-grid {
+    gap: 15px;
+  }
+
+  .card-header {
+    padding: 15px 12px;
+    gap: 10px;
+  }
+
+  .card-icon-wrapper {
+    width: 45px;
+    height: 45px;
+  }
+
+  .card-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .card-header h3 {
+    font-size: 16px;
+  }
+
+  .card-body {
+    padding: 15px 12px;
+    gap: 12px;
+  }
+
+  .info-item {
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .item-icon-wrapper {
+    width: 28px;
+    height: 28px;
+  }
+
+  .info-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .item-label {
+    font-size: 10px;
+  }
+
+  .item-description {
+    font-size: 12px;
+  }
+
+  .card-footer {
+    padding: 12px;
+  }
+
+  .card-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
+  .info-card {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  }
+
+  .card-header {
+    padding: 12px 10px;
+    gap: 8px;
+  }
+
+  .card-icon-wrapper {
+    width: 35px;
+    height: 35px;
+  }
+
+  .card-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .card-header h3 {
+    font-size: 14px;
+  }
+
+  .card-body {
+    padding: 12px 10px;
+    gap: 10px;
+  }
+
+  .item-label {
+    font-size: 9px;
+  }
+
+  .item-description {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .card-footer {
+    padding: 10px;
+  }
+
+  .card-button {
+    padding: 8px 15px;
+    font-size: 11px;
+  }
+}

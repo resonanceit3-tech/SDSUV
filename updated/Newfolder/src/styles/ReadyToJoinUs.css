@@ -1,0 +1,136 @@
+.ready-to-join {
+  background-color: #f8f9fa;
+  padding: 60px 40px;
+  border-top: 5px solid #2ecc71;
+}
+
+.join-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.join-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.join-header h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #1e3a5f;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.join-header p {
+  font-size: 15px;
+  color: #666;
+  margin: 0 0 30px 0;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.admission-button {
+  display: inline-block;
+  background-color: #2ecc71;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.admission-button:hover {
+  background-color: #27ae60;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.team-card {
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team-image-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.team-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #2ecc71;
+  object-fit: cover;
+}
+
+.team-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2ecc71;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.team-designation {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 5px 0;
+  line-height: 1.5;
+}
+
+.team-organization {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ready-to-join {
+    padding: 40px 20px;
+  }
+
+  .join-header h2 {
+    font-size: 28px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .team-card {
+    padding: 30px 20px;
+  }
+
+  .team-image {
+    width: 120px;
+    height: 120px;
+  }
+}

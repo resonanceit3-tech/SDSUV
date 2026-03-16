@@ -1,0 +1,117 @@
+.institutes-section {
+  background-color: white;
+  padding: 60px 40px;
+  border-top: 5px solid #2ecc71;
+}
+
+.institutes-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.institutes-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin: 0 0 50px 0;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+  letter-spacing: 1px;
+}
+
+.institutes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.institute-card {
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.institute-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.institute-header {
+  background-color: #3d4d5c;
+  color: white;
+  padding: 16px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.institute-content {
+  padding: 30px 25px;
+  background-color: #f9f9f9;
+}
+
+.colleges-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.college-item {
+  margin-bottom: 18px;
+}
+
+.college-item:last-child {
+  margin-bottom: 0;
+}
+
+.college-item::before {
+  content: '▶ ';
+  color: #2ecc71;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.college-link {
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.college-link:hover {
+  color: #2ecc71;
+}
+
+@media (max-width: 1024px) {
+  .institutes-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .institutes-section {
+    padding: 40px 20px;
+  }
+
+  .institutes-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .institutes-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .institute-content {
+    padding: 20px 15px;
+  }
+
+  .college-link {
+    font-size: 13px;
+  }
+}

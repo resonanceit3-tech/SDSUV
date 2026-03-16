@@ -1,0 +1,385 @@
+.header {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.logo-placeholder {
+  width: 70px;
+  height: 70px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.logo-placeholder svg {
+  width: 60px;
+  height: 60px;
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.header-top h1 {
+  font-size: 32px;
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.admission-btn {
+  padding: 12px 30px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.admission-btn:hover {
+  background-color: #27ae60;
+}
+
+.navbar {
+  display: flex;
+  background-color: #1e3a5f;
+  padding: 0 80px 0 40px;
+  overflow: visible;
+  align-items: stretch;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  justify-content: space-evenly;
+}
+
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 16px 18px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 1;
+}
+
+.nav-link:first-child {
+  margin-left: 0;
+}
+
+.nav-link:hover {
+  background-color: #2ecc71;
+  border-bottom-color: #2ecc71;
+}
+
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:last-child {
+  margin-right: 80px;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.nav-item:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  border-top: 3px solid #2ecc71;
+  margin-top: 0px;
+  animation: slideDown 0.3s ease-out;
+}
+
+.dropdown-menu.institutes-menu {
+  min-width: 350px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu.departments-menu {
+  min-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.dropdown-menu.academic-menu {
+  min-width: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.dropdown-menu.students-menu {
+  min-width: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 12px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.dropdown-menu.departments-menu .dropdown-item {
+  border-bottom: none;
+  border-right: 1px solid #e0e0e0;
+}
+
+.dropdown-menu.departments-menu .dropdown-item:nth-child(even) {
+  border-right: none;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+  color: #2ecc71;
+  padding-left: 25px;
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo-section {
+    gap: 15px;
+  }
+
+  .logo-placeholder {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-placeholder svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-top h1 {
+    font-size: 20px;
+  }
+
+  .admission-btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .navbar {
+    overflow-x: auto;
+    padding: 0 10px 0 0;
+    justify-content: flex-start;
+  }
+
+  .nav-item {
+    flex-shrink: 0;
+  }
+
+  .nav-link {
+    padding: 14px 10px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .nav-item:last-child {
+    margin-right: 20px;
+  }
+
+  .dropdown-menu {
+    min-width: 250px;
+  }
+
+  .dropdown-menu.institutes-menu {
+    min-width: 300px;
+    max-height: 350px;
+  }
+
+  .dropdown-menu.departments-menu {
+    min-width: 400px;
+    grid-template-columns: 1fr;
+    max-height: 400px;
+  }
+
+  .dropdown-menu.students-menu {
+    min-width: 300px;
+    grid-template-columns: 1fr;
+    max-height: 500px;
+  }
+}
+
+/* Extra small devices (320px - 480px) */
+@media (max-width: 480px) {
+  .header-top {
+    padding: 12px 15px;
+    gap: 10px;
+  }
+
+  .logo-section {
+    gap: 10px;
+  }
+
+  .logo-placeholder {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo-placeholder svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header-top h1 {
+    font-size: 16px;
+  }
+
+  .admission-btn {
+    padding: 8px 15px;
+    font-size: 11px;
+  }
+
+  .navbar {
+    padding: 0 10px 0 0;
+  }
+
+  .nav-link {
+    padding: 12px 8px;
+    font-size: 11px;
+  }
+
+  .nav-item:last-child {
+    margin-right: 15px;
+  }
+
+  .dropdown-menu {
+    min-width: 200px;
+  }
+
+  .dropdown-menu.departments-menu,
+  .dropdown-menu.academic-menu,
+  .dropdown-menu.students-menu {
+    min-width: 280px;
+    grid-template-columns: 1fr;
+  }
+
+  .dropdown-item {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}
+
+  .nav-link {
+    padding: 12px 15px;
+    font-size: 12px;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0 40px 0 0;
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    padding: 16px 12px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .nav-item:last-child {
+    margin-right: 40px;
+  }
+
+  .dropdown-menu {
+    min-width: 280px;
+  }
+
+  .dropdown-menu.departments-menu {
+    min-width: 500px;
+  }
+}

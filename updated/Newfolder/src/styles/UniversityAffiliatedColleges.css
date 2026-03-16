@@ -1,0 +1,229 @@
+.university-affiliated-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  padding: 40px 20px;
+}
+
+.university-affiliated-header {
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  position: relative;
+  text-align: center;
+  padding: 40px 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.university-affiliated-header h1 {
+  font-size: 42px;
+  color: #1e3a5f;
+  margin: 15px 0 8px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.university-affiliated-subtitle {
+  font-size: 18px;
+  color: #888;
+  font-weight: 500;
+  margin: 0;
+}
+
+.university-affiliated-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.university-affiliated-description {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  margin-bottom: 40px;
+  text-align: center;
+  border-left: 5px solid #2ecc71;
+}
+
+.university-affiliated-description p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.university-affiliated-stats {
+  margin-bottom: 50px;
+}
+
+.university-affiliated-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.university-affiliated-stat-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: all 0.3s ease;
+  border-top: 3px solid #2ecc71;
+}
+
+.university-affiliated-stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(46, 204, 113, 0.15);
+}
+
+.university-affiliated-stat-value {
+  font-size: 32px;
+  font-weight: 800;
+  color: #2ecc71;
+  margin-bottom: 8px;
+}
+
+.university-affiliated-stat-label {
+  font-size: 14px;
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.university-affiliated-sections {
+  margin-bottom: 50px;
+}
+
+.university-affiliated-sections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.university-affiliated-section-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: all 0.3s ease;
+  border-top: 3px solid #2ecc71;
+}
+
+.university-affiliated-section-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(46, 204, 113, 0.15);
+}
+
+.university-affiliated-section-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.university-affiliated-section-card h3 {
+  font-size: 16px;
+  color: #1e3a5f;
+  font-weight: 700;
+  margin: 12px 0;
+}
+
+.university-affiliated-section-card p {
+  font-size: 13px;
+  color: #888;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.university-affiliated-cta {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.university-affiliated-btn {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 16px rgba(46, 204, 113, 0.25);
+}
+
+.university-affiliated-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(46, 204, 113, 0.35);
+}
+
+@media (max-width: 1024px) {
+  .university-affiliated-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .university-affiliated-sections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .university-affiliated-header h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .university-affiliated-page {
+    padding: 20px 15px;
+  }
+
+  .university-affiliated-header {
+    padding: 25px 20px;
+    margin-bottom: 30px;
+  }
+
+  .university-affiliated-header h1 {
+    font-size: 24px;
+  }
+
+  .university-affiliated-subtitle {
+    font-size: 15px;
+  }
+
+  .back-button {
+    left: 15px;
+    top: 15px;
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .university-affiliated-description {
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+
+  .university-affiliated-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .university-affiliated-sections-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .university-affiliated-stat-card,
+  .university-affiliated-section-card {
+    padding: 20px;
+  }
+
+  .university-affiliated-stat-value {
+    font-size: 24px;
+  }
+
+  .university-affiliated-section-icon {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"StudentFeedbackForm.d.ts","sourceRoot":"","sources":["StudentFeedbackForm.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAC1B,OAAO,mCAAmC,CAAC;AAE3C,UAAU,wBAAwB;IAChC,QAAQ,EAAE,IAAI,GAAG,IAAI,CAAC;IACtB,MAAM,EAAE,MAAM,IAAI,CAAC;CACpB;AAED,QAAA,MAAM,mBAAmB,EAAE,KAAK,CAAC,EAAE,CAAC,wBAAwB,CAiH3D,CAAC;AAEF,eAAe,mBAAmB,CAAC"}
